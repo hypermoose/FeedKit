@@ -132,6 +132,13 @@ extension AtomFeed {
                 self.entries?.last?.content = AtomFeedEntryContent(attributes: attributes)
             }
             
+        case .feedEntryContentTypeAcceptance:
+           
+            // Map it to content
+            if  self.entries?.last?.content == nil {
+                self.entries?.last?.content = AtomFeedEntryContent(attributes: attributes)
+            }
+
         case .feedEntrySource:
             
             if  self.entries?.last?.source == nil {

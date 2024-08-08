@@ -52,7 +52,6 @@ public class AtomFeedEntryContent {
         /// if the server providing that content also provides a media type, the
         /// server-provided media type is authoritative.
         public var src: String?
-        
     }
     
     /// The element's attributes.
@@ -61,6 +60,9 @@ public class AtomFeedEntryContent {
     /// The element's value.
     public var value: String?
     
+    // Extension added for Government feeds
+    public var acceptance: Date?
+
     public init() { }
     
 }

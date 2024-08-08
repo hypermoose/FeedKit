@@ -71,6 +71,9 @@ enum AtomPath: String {
     case feedEntryContributorEmail                         = "/feed/entry/contributor/email"
     case feedEntryContributorUri                           = "/feed/entry/contributor/uri"
     
+    // MARK: Govt feed extensions
+    case feedEntryContentTypeAcceptance                    = "/feed/entry/content-type/acceptance-date-time"
+
     // MARK: Media
     
     case feedEntryMediaThumbnail                           = "/feed/entry/media:thumbnail"

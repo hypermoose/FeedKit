@@ -52,6 +52,7 @@ extension AtomFeed {
         case .feedEntryUpdated:                                self.entries?.last?.updated                                       = string.toPermissiveDate()
         case .feedEntryID:                                     self.entries?.last?.id                                            = self.entries?.last?.id?.appending(string) ?? string
         case .feedEntryContent:                                self.entries?.last?.content?.value                                = self.entries?.last?.content?.value?.appending(string) ?? string
+        case .feedEntryContentTypeAcceptance:                  self.entries?.last?.content?.acceptance                           = string.toPermissiveDate()
         case .feedEntryPublished:                              self.entries?.last?.published                                     = string.toPermissiveDate()
         case .feedEntrySourceID:                               self.entries?.last?.source?.id                                    = self.entries?.last?.source?.id?.appending(string) ?? string
         case .feedEntrySourceTitle:                            self.entries?.last?.source?.title                                 = self.entries?.last?.source?.title?.appending(string) ?? string
